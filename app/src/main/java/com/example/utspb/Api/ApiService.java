@@ -8,7 +8,7 @@ import retrofit2.http.Query;
 
 public interface ApiService {
 
-    String TOKEN = "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";
+    String TOKEN = "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" ;
     @GET("search/users")
     @Headers("Authorization: Bearer " + TOKEN )
     Call<Response> callUser(@Query("q") String username);
